@@ -1,0 +1,14 @@
+# Maven
+target/
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+# Archivos generados y sensibles
+*.class
+*.log
+.env
