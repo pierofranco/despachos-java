@@ -12,3 +12,9 @@ nbproject/
 *.class
 *.log
 .env
+
+# Archivos generados por herramientas de desarrollo
+.metals/
+.bloop/
+.vscode/
+target/
