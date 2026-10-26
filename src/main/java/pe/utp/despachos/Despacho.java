@@ -14,7 +14,18 @@ public class Despacho {
 
     public String getCodigo() { return codigo; }
     public String getEstado() { return estado; }
-    public void setEstado(String estado) { this.estado = estado; }
+    
+    public void setEstado(String estado) {
+        if (!"PENDIENTE".equals(estado) &&
+            !"EN_RUTA".equals(estado) &&
+            !"ENTREGADO".equals(estado)) {
+            throw new IllegalArgumentException(
+                "Estado no válido: " + estado
+            );
+        }
+        this.estado = estado;
+    }
+
 
     @Override
     public String toString() {
